@@ -1,0 +1,201 @@
+{
+	"rasa_nlu_data": {
+		"common_examples": [
+			{
+				"text": "please buy 100 shares of infosys at 1234.00",
+				"intent": "buy_stock",
+				"entities": [{
+						"start": 11,
+						"end": 13,
+						"value": "100",
+						"entity": "quantity"
+					},
+					{
+						"start": 25,
+						"end": 31,
+						"value": "Infosys",
+						"entity": "security"
+					},
+					{
+						"start": 36,
+						"end": 42,
+						"value": "1234.00",
+						"entity": "price"
+					}
+				]
+			},
+			{
+				"text": "can you buy 50 stocks of TCS for 100.00 each",
+				"intent": "buy_stock",
+				"entities": [{
+						"start": 12,
+						"end": 13,
+						"value": "50",
+						"entity": "quantity"
+					},
+					{
+						"start": 25,
+						"end": 27,
+						"value": "TCS",
+						"entity": "security"
+					},
+					{
+						"start": 33,
+						"end": 38,
+						"value": "100.00",
+						"entity": "price"
+					}
+				]
+			},
+			{
+				"text": "for 500 each buy shares of ONGC",
+				"intent": "buy_stock",
+				"entities": [{
+						"start": 4,
+						"end": 6,
+						"value": "500",
+						"entity": "quantity"
+					},
+					{
+						"start": 27,
+						"end": 30,
+						"value": "ONGC",
+						"entity": "security"
+					}
+				]
+			},
+			{
+				"text": "buy 100 of HUL @ 123.45",
+				"intent": "buy_stock",
+				"entities": [{
+						"start": 4,
+						"end": 6,
+						"value": "100",
+						"entity": "quantity"
+					},
+					{
+						"start": 11,
+						"end": 13,
+						"value": "HUL",
+						"entity": "security"
+					},
+					{
+						"start": 17,
+						"end": 22,
+						"value": "123.45",
+						"entity": "price"
+					}
+				]
+			},
+			{
+				"text": "CIPLA buy 230 at 1234.56",
+				"intent": "buy_stock",
+				"entities": [{
+						"start": 0,
+						"end": 4,
+						"value": "CIPLA",
+						"entity": "security"
+					},
+					{
+						"start": 10,
+						"end": 12,
+						"value": "230",
+						"entity": "quantity"
+					},
+					{
+						"start": 17,
+						"end": 23,
+						"value": "1234.56",
+						"entity": "price"
+					}
+				]
+			},
+			{
+				"text": "I ask you to buy ITC 100 shares for 123.45 a piece",
+				"intent": "buy_stock",
+				"entities": [{
+						"start": 17,
+						"end": 19,
+						"value": "ITC",
+						"entity": "security"
+					},
+					{
+						"start": 21,
+						"end": 23,
+						"value": "100",
+						"entity": "quantity"
+					},
+					{
+						"start": 36,
+						"end": 42,
+						"value": "123.45",
+						"entity": "price"
+					}
+				]
+			},
+			{
+				"text": "buy me 50 stock of RIL at 500.00",
+				"intent": "buy_stock",
+				"entities": [{
+						"start": 7,
+						"end": 8,
+						"value": "50",
+						"entity": "quantity"
+					},
+					{
+						"start": 19,
+						"end": 21,
+						"value": "RIL",
+						"entity": "security"
+					},
+					{
+						"start": 26,
+						"end": 32,
+						"value": "500.00",
+						"entity": "price"
+					}
+				]
+			},
+			{
+				"text": "hey",
+				"intent": "greet",
+				"entities": []
+			},
+			{
+				"text": "howdy",
+				"intent": "greet",
+				"entities": []
+			},
+			{
+				"text": "hey there",
+				"intent": "greet",
+				"entities": []
+			},
+			{
+				"text": "hello",
+				"intent": "greet",
+				"entities": []
+			},
+			{
+				"text": "hi",
+				"intent": "greet",
+				"entities": []
+			},
+			{
+				"text": "good morning",
+				"intent": "greet",
+				"entities": []
+			},
+			{
+				"text": "good evening",
+				"intent": "greet",
+				"entities": []
+			},
+			{
+				"text": "dear sir",
+				"intent": "greet",
+				"entities": []
+			}
+		]
+	}
+}

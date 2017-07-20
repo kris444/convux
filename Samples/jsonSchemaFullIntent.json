@@ -1,0 +1,199 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "properties": {
+        "auto": {
+            "id": "/properties/auto",
+            "type": "boolean"
+        },
+        "contexts": {
+            "id": "/properties/contexts",
+            "items": {},
+            "type": "array"
+        },
+        "cortanaCommand": {
+            "id": "/properties/cortanaCommand",
+            "properties": {
+                "navigateOrService": {
+                    "id": "/properties/cortanaCommand/properties/navigateOrService",
+                    "type": "string"
+                },
+                "target": {
+                    "id": "/properties/cortanaCommand/properties/target",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "events": {
+            "id": "/properties/events",
+            "items": {},
+            "type": "array"
+        },
+        "fallbackIntent": {
+            "id": "/properties/fallbackIntent",
+            "type": "boolean"
+        },
+        "id": {
+            "id": "/properties/id",
+            "type": "string"
+        },
+        "name": {
+            "id": "/properties/name",
+            "type": "string"
+        },
+        "priority": {
+            "id": "/properties/priority",
+            "type": "integer"
+        },
+        "responses": {
+            "id": "/properties/responses",
+            "items": {
+                "id": "/properties/responses/items",
+                "properties": {
+                    "action": {
+                        "id": "/properties/responses/items/properties/action",
+                        "type": "string"
+                    },
+                    "affectedContexts": {
+                        "id": "/properties/responses/items/properties/affectedContexts",
+                        "items": {},
+                        "type": "array"
+                    },
+                    "messages": {
+                        "id": "/properties/responses/items/properties/messages",
+                        "items": {
+                            "id": "/properties/responses/items/properties/messages/items",
+                            "properties": {
+                                "speech": {
+                                    "id": "/properties/responses/items/properties/messages/items/properties/speech",
+                                    "items": {
+                                        "id": "/properties/responses/items/properties/messages/items/properties/speech/items",
+                                        "type": "string"
+                                    },
+                                    "type": "array"
+                                },
+                                "type": {
+                                    "id": "/properties/responses/items/properties/messages/items/properties/type",
+                                    "type": "integer"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "parameters": {
+                        "id": "/properties/responses/items/properties/parameters",
+                        "items": {
+                            "id": "/properties/responses/items/properties/parameters/items",
+                            "properties": {
+                                "dataType": {
+                                    "id": "/properties/responses/items/properties/parameters/items/properties/dataType",
+                                    "type": "string"
+                                },
+                                "isList": {
+                                    "id": "/properties/responses/items/properties/parameters/items/properties/isList",
+                                    "type": "boolean"
+                                },
+                                "name": {
+                                    "id": "/properties/responses/items/properties/parameters/items/properties/name",
+                                    "type": "string"
+                                },
+                                "prompts": {
+                                    "id": "/properties/responses/items/properties/parameters/items/properties/prompts",
+                                    "items": {
+                                        "id": "/properties/responses/items/properties/parameters/items/properties/prompts/items",
+                                        "type": "string"
+                                    },
+                                    "type": "array"
+                                },
+                                "required": {
+                                    "id": "/properties/responses/items/properties/parameters/items/properties/required",
+                                    "type": "boolean"
+                                },
+                                "value": {
+                                    "id": "/properties/responses/items/properties/parameters/items/properties/value",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "resetContexts": {
+                        "id": "/properties/responses/items/properties/resetContexts",
+                        "type": "boolean"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "templates": {
+            "id": "/properties/templates",
+            "items": {
+                "id": "/properties/templates/items",
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "userSays": {
+            "id": "/properties/userSays",
+            "items": {
+                "id": "/properties/userSays/items",
+                "properties": {
+                    "count": {
+                        "id": "/properties/userSays/items/properties/count",
+                        "type": "integer"
+                    },
+                    "data": {
+                        "id": "/properties/userSays/items/properties/data",
+                        "items": {
+                            "id": "/properties/userSays/items/properties/data/items",
+                            "properties": {
+                                "alias": {
+                                    "id": "/properties/userSays/items/properties/data/items/properties/alias",
+                                    "type": "string"
+                                },
+                                "meta": {
+                                    "id": "/properties/userSays/items/properties/data/items/properties/meta",
+                                    "type": "string"
+                                },
+                                "text": {
+                                    "id": "/properties/userSays/items/properties/data/items/properties/text",
+                                    "type": "string"
+                                },
+                                "userDefined": {
+                                    "id": "/properties/userSays/items/properties/data/items/properties/userDefined",
+                                    "type": "boolean"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "id": {
+                        "id": "/properties/userSays/items/properties/id",
+                        "type": "string"
+                    },
+                    "isTemplate": {
+                        "id": "/properties/userSays/items/properties/isTemplate",
+                        "type": "boolean"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "webhookForSlotFilling": {
+            "id": "/properties/webhookForSlotFilling",
+            "type": "boolean"
+        },
+        "webhookUsed": {
+            "id": "/properties/webhookUsed",
+            "type": "boolean"
+        }
+    },
+    "type": "object"
+}
